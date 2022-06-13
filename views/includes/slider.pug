@@ -1,0 +1,18 @@
+#mySlider.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+            li(data-target="mySlide" data-slide-to="0").active
+            li(data-target="mySlide" data-slide-to="1")
+            li(data-target="mySlide" data-slide-to="2")
+
+        
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.img-fluid(src="https://unsplash.it/1000/350" alt="First slide")
+            .carousel-item
+                img.d-block.img-fluid(src="https://unsplash.it/1000/350" alt="First slide")
+            .carousel-item
+                img.d-block.img-fluid(src="https://unsplash.it/1000/350" alt="First slide")
+            a(href="#mySlider" data-slide="prev").carousel-control-prev
+                span.carousel-control-prev-icon
+            a(href="#mySlider" data-slide="next").carousel-control-next
+                span.carousel-control-next-icon

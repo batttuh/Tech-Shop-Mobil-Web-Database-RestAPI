@@ -1,0 +1,15 @@
+mixin createProduct(product)
+     .col-md-4 
+        .card.my-3
+            img.card-img-top(src=`/img/${product.imageUrl}` alt=`${product.description}`)
+            .card-body
+                h4.card-title
+                    a( href=`/products/${product.id}`) #{product.name}
+                small.text-muted
+                    i.fa.fa-try #{product.price}
+                    
+            div.card-footer.text-center
+                
+                a(href=`/products/${product.id}`).btn.btn-outline-primary.btn-sm Details
+                a(href=`/products/${product.id}`).btn.btn-outline-primary.btn-sm.ml-3
+                    i.fa.fa-angle-double.right Add to Card
