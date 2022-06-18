@@ -11,20 +11,9 @@ const cookieParser=require("cookie-parser");
 const session=require("express-session");
 const mongoDbStore=require("connect-mongodb-session")(session);
 
-var store=new mongoDbStore({
-  uri:
-
-})
 
 
-app.use(cookieParser());
 
-app.use(session({
-  secret: "keyboard cat",
-  resave:false,
-  saveUninitialized: false
-}));
-app.use()
 app.set("view engine","pug");
 app.set("views","./views");
 const products = require("./routers/productDatabaseToJson");
